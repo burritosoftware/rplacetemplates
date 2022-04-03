@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Arcaea Logo template
+// @name         Bemani Logo template
 // @namespace    http://tampermonkey.net/
 // @version      0.3
 // @description  try to take over the canvas!
-// @author       oralekin, LittleEndu, ekgame
+// @author       oralekin, LittleEndu, ekgame, Goatgarien
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
@@ -12,7 +12,7 @@ if (window.top !== window.self) {
     window.addEventListener('load', () => {
         // Load the image
         const image = document.createElement("img");
-        image.src = "https://github.com/burritosoftware/rplacetemplates/raw/master/arcaeatemplate.png";
+        image.src = "https://github.com/Goatgarien/rplacetemplates/raw/master/BEMANI.png";
         image.onload = () => {
             image.style = `position: absolute; left: 0; top: 0; width: ${image.width/3}px; height: ${image.height/3}px; image-rendering: pixelated; z-index: 1`;
         };
